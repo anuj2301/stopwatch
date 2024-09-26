@@ -1,0 +1,75 @@
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#timeDisplay {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: #555;
+    color: white;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+#startStopBtn.running {
+    background-color: red;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Light Mode */
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+body.light-mode button {
+    background-color: #ccc;
+    color: black;
+}
+
+body.light-mode button:hover {
+    background-color: #aaa;
+}
+
+body.light-mode #startStopBtn.running {
+    background-color: red;
+}
